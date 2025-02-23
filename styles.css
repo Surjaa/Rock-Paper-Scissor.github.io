@@ -1,0 +1,86 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(185, 184, 184);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.game-container {
+  text-align: center;
+  background: rgb(238, 237, 237);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(11, 220, 235, 0.1);
+  max-width: 550px;
+  width: 100%;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.choice-icon {
+  font-size: 80px; /* Adjust the size of the icons */
+  cursor: pointer;
+  padding: 3%;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(
+    10px 10px 10px rgb(111, 111, 111)
+  ); /* Apply a drop shadow directly to each icon */
+}
+
+.choice-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(
+    10px 10px 10px rgb(142, 141, 141)
+  ); /* Apply a drop shadow directly to each icon */
+  color: #007bff; /* Highlight color on hover */
+}
+
+.result,
+.scoreboard {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#start-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .choice-icon {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .choice-icon {
+    font-size: 60px;
+  }
+
+  .result,
+  .scoreboard {
+    font-size: 16px;
+  }
+}
